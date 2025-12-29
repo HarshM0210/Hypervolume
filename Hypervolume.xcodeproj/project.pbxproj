@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		064450C52EFD275100267BD9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		06762D432E9CBC0E004A00BF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -19,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		064450C72EFD275100267BD9 /* First */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = First; sourceTree = BUILT_PRODUCTS_DIR; };
 		06762D452E9CBC0E004A00BF /* Hypervolume */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hypervolume; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -31,6 +41,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		064450C42EFD275100267BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06762D422E9CBC0E004A00BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				06762D452E9CBC0E004A00BF /* Hypervolume */,
+				064450C72EFD275100267BD9 /* First */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +78,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		064450C62EFD275100267BD9 /* First */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064450CB2EFD275100267BD9 /* Build configuration list for PBXNativeTarget "First" */;
+			buildPhases = (
+				064450C32EFD275100267BD9 /* Sources */,
+				064450C42EFD275100267BD9 /* Frameworks */,
+				064450C52EFD275100267BD9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = First;
+			packageProductDependencies = (
+			);
+			productName = First;
+			productReference = 064450C72EFD275100267BD9 /* First */;
+			productType = "com.apple.product-type.tool";
+		};
 		06762D442E9CBC0E004A00BF /* Hypervolume */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06762D4C2E9CBC0E004A00BF /* Build configuration list for PBXNativeTarget "Hypervolume" */;
@@ -91,6 +128,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					064450C62EFD275100267BD9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					06762D442E9CBC0E004A00BF = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -111,11 +151,19 @@
 			projectRoot = "";
 			targets = (
 				06762D442E9CBC0E004A00BF /* Hypervolume */,
+				064450C62EFD275100267BD9 /* First */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		064450C32EFD275100267BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06762D412E9CBC0E004A00BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +174,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		064450CC2EFD275100267BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		064450CD2EFD275100267BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		06762D4A2E9CBC0E004A00BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +326,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		064450CB2EFD275100267BD9 /* Build configuration list for PBXNativeTarget "First" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064450CC2EFD275100267BD9 /* Debug */,
+				064450CD2EFD275100267BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		06762D402E9CBC0E004A00BF /* Build configuration list for PBXProject "Hypervolume" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
