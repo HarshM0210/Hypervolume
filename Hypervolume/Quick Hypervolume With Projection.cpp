@@ -261,7 +261,8 @@ int quickHypervolume(const vector<vector<int>>& population,const vector<int>& re
 
         for (int i = 1; i < total_hyperoctants; i++)
         {
-            Hypervolume += quickHypervolume(population_hyperoctant[i],reference_hyperoctant[i]);
+            vector<vector<int>>population_nonDominated= nonDominatedPopulation(population_hyperoctant[i]);
+            Hypervolume += quickHypervolume(population_nonDominated,reference_hyperoctant[i]);
         }
         
         return Hypervolume;
