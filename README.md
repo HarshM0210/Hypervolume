@@ -1,6 +1,6 @@
 # Hypervolume
 <p>
-This repository documents collaborative research on the Hypervolume Indicator within the context of Multi-Objective Optimization.It focuses on the study, implementation, and analysis of methods related to hypervolume computation
+This repository documents collaborative research on the Hypervolume indicator within the context of Multi-Objective Optimization. It focuses on the study, implementation, and analysis of methods related to Hypervolume computation.
 </p>
 
 ## Authors
