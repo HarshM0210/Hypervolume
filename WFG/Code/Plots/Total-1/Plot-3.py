@@ -1,0 +1,36 @@
+import matplotlib.pyplot as plt
+
+X = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
+
+Y1 = [357, 769, 1250, 1689, 2167, 2631, 3063, 3412, 4002, 4344]
+Y2 = [774, 1971, 3153, 4778, 6363, 8361, 9125, 10167, 13131, 13567]
+Y3 = [361, 769, 1247, 1693, 2170, 2630, 3090, 3426, 3983, 4335]
+
+plt.figure(figsize=(10, 6))
+
+# Plot with distinct styles
+plt.plot(X, Y1, marker='o', linewidth=2.5, label='Original Population')
+plt.plot(X, Y2, marker='s', linestyle='--', linewidth=2.5, label='Randomly Shuffled Population')
+plt.plot(X, Y3, marker='^', linestyle='-.', linewidth=2.5, label='Standard Deviation Shuffled Population')
+
+# Force all X points to be visible
+plt.xticks(X)
+
+# Improve Y scaling (tight margins)
+y_min = min(min(Y1), min(Y2), min(Y3))
+y_max = max(max(Y1), max(Y2), max(Y3))
+plt.ylim(y_min - 20, y_max + 20)
+
+# Labels and title
+plt.xlabel('Number Of Points')
+plt.ylabel('Total Number Of Points With Which hypervolume() Function Is Called')
+plt.title('Objectives : 3')
+
+# Grid for clarity
+plt.grid(True, linestyle='--', alpha=0.6)
+
+# Legend
+plt.legend()
+
+plt.tight_layout()
+plt.show()
