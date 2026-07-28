@@ -6,5 +6,5 @@ This repository documents collaborative research on the Hypervolume indicator wi
 ## Authors
 <ol>
   <li>Dr. Sumit Mishra - National Institute Of Technology, Warangal, India.</li>
-  <li>Harsh Mishra - Rajiv Gandhi Institute Of Petroleum Technology, Amethi, India.</li>
+  <li>Mr. Harsh Mishra - Rajiv Gandhi Institute Of Petroleum Technology, Amethi, India.</li>
 </ol>
